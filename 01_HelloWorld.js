@@ -11,3 +11,6 @@ if (js == "amazing") {
 } else {
     console.log("JavaScript is boring")
 }
+
+console.log("___-----_____--- Simple math operations ---_____------_____")
+console.log("5+3-2=", 5 + 3 - 2)
