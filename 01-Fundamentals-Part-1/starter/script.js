@@ -62,3 +62,35 @@ javaScriptIsFun = "hello";
 
 console.log(javaScriptIsFun)
 console.log(typeof javaScriptIsFun)
+
+/*___________-----______ let, const and var _____------________-- */
+let newAge = 30;
+newAge = 31;
+
+const birthYear = 1993;
+//birthYear = 1995;// immutable variable
+
+//const job;//'const' declarations must be initialized
+
+/*
+Var:
+    Variables declared with var are function-scoped or globally scoped, but not block-scoped.
+    They can be redeclared and reassigned.
+    var variables are hoisted to the top of their function or global scope. This means you can access them before they are declared.
+let:
+    Variables declared with let are block-scoped. They cannot be redeclared or reassigned.Variables declared with let are block-scoped, which means they are only accessible within the block they are declared in (if, for, while, etc.), or within a function if declared inside a function.
+    They can be reassigned but not redeclared within the same scope.
+    let variables are not hoisted. They are only accessible after the declaration.
+const:
+    Variables declared with const are block-scoped. They cannot be redeclared or reassigned.Variables declared with const are also block-scoped like let.
+    They cannot be reassigned once they are initialized. However, for objects and arrays, while the reference cannot be changed, the properties of objects and elements of arrays can be modified.
+    const variables are not hoisted. 
+When to choose between them:
+    Use const by default for variables that won't be reassigned, as it makes your code more predictable and helps catch unintended mutations.
+    Use let for variables that need to be reassigned.
+    Avoid using var unless you have a specific reason to use it, as it can lead to unpredictable behavior and make code harder to reason about due to hoisting. Use var only if you need to support older browsers or if you specifically need its function-scoped behavior.
+*/
+var job = 'programmer'
+job = 'teacher'
+lalo = "shema"//never just write a variable like this without really decalaring it
+console.log(lalo)
