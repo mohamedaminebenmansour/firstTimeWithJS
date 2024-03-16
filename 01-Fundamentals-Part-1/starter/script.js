@@ -94,3 +94,44 @@ var job = 'programmer'
 job = 'teacher'
 lalo = "shema"//never just write a variable like this without really decalaring it
 console.log(lalo)
+
+/*__________________Basic Operators____________________ */
+//math operations
+console.log("/*__________________Basic Operators____________________ */")
+const ageMohamed = 30;
+const ageAmin = 2024 - 1993;
+console.log(`age amin = ${ageAmin}`)
+const now = 2024;
+const ageMed = now - 1998;
+console.log(ageMohamed - 2, ageAmin * 2, ageMed / 3, 2 * 3)
+console.log(2 ** 3)// 2 to the poer of 3 = 2 * 2 * 2
+const fName = "mohamed Amine"
+const lName = "BenMansour"
+console.log(fName + " " + lName)
+// assigment operator
+let x = 10 + 5;//in this line of code, we do actually have two operaators "=" and "+"
+console.log(x)
+x += 10; // x= x + 10
+console.log(x)
+x *= 4
+console.log(x)
+x /= 10
+console.log(x)
+x -= 9
+console.log(x)
+x++
+console.log(x)
+x--
+console.log(x)
+
+// comparaison operator
+console.log(15 > 15)
+console.log(15 < 15)
+console.log(15 >= 15)
+console.log(15 <= 15)
+console.log(15 == 15)
+console.log(15 == "15")
+console.log(15 === "15")
+
+const isFullAge = (now - 2000) >= 18
+console.log("is full age =", isFullAge)
