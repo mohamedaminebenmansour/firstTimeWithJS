@@ -40,7 +40,7 @@ const num = Number('23');
 function calcAge1(birthYear) {
     return 2024 - birthYear;
 }
-console.log(calcAge1(1993))
+console.log("Function declarations::", calcAge1(1993))
 
 
 //Function Expressions
@@ -48,8 +48,23 @@ const calcAge2 = function (birthYeah) {
     return 2024 - birthYeah;
 }
 const age2 = calcAge2(1998);
-console.log(age2);
+console.log("Function Expressions::", age2);
 
+//Arrow Functions
+// we have One parameter
+const calcAge3 = birthYeah => 2024 - birthYeah;
+const age3 = calcAge3(1997)
+console.log("Arrow Functions::", age3);
+// we have Two parameters
+const yearsUntilRetirement = (birthYeah, firstName) => {
+    const age = 2024 - birthYeah;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1993, 'Mohamed'));
+console.log(yearsUntilRetirement(1959, 'Amine'));
 
 /*I like to think of functions as machines.
 So I think that's a great analogy */
