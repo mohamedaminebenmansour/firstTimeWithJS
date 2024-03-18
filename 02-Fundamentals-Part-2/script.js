@@ -1,6 +1,6 @@
 //////////////// ACTiving Strict Mode////////////////
 'use strict';
-
+/*
 let hasDrieversLiscene = false;
 const passTest = true;
 if (passTest) {
@@ -9,7 +9,38 @@ if (passTest) {
 if (hasDrieversLiscene) { console.log("I can drive") }
 
 //const interface = "audio"
+*/
+//////////////////////////////
+// Functions
+function logger() {
+    console.log('My name is Daminco');
+}//this function does not return anything
+// calling / running / invoking function (same things)
+logger();
+logger();
+logger();
 
+function fruitProcessor(apples, oranges) {
+    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+    return juice;
+}// function return string
+
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
+
+const num = Number('23');
+
+/////////////
+
+
+
+
+/*I like to think of functions as machines.
+So I think that's a great analogy */
+//////// ///////////////////////////////
 //Dot vs Bracket
 /*
 const mohamed = {
