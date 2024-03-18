@@ -1,4 +1,17 @@
+//////////////// ACTiving Strict Mode////////////////
+'use strict';
+
+let hasDrieversLiscene = false;
+const passTest = true;
+if (passTest) {
+    hasDrieversLiscene = true;
+}
+if (hasDrieversLiscene) { console.log("I can drive") }
+
+//const interface = "audio"
+
 //Dot vs Bracket
+/*
 const mohamed = {
     firstName: 'Mohamed Amine',
     lastName: "Benmansour",
@@ -35,4 +48,6 @@ mohamed.location = "tunisia";
 mohamed.instagram = "@mohamedAmineBenmansour";
 console.log(mohamed)
 
-console.log(`${mohamed.firstName} has ${mohamed.friends.length} and his best friends is ${mohamed.friends[0]}`)
+console.log(`${mohamed.firstName} has ${mohamed.friends.length} and his best friends is ${mohamed.friends[0]}`);
+*/
+////////////////// Object Methods/////////////////
