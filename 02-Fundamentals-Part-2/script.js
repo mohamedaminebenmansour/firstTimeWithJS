@@ -12,6 +12,7 @@ if (hasDrieversLiscene) { console.log("I can drive") }
 */
 //////////////////////////////
 // Functions
+/*
 function logger() {
     console.log('My name is Daminco');
 }//this function does not return anything
@@ -32,10 +33,22 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
 const num = Number('23');
+*/
+/////////////////////////////////////////
+//----------_________------- Function Declarations vs Expressions
+//Function declarations
+function calcAge1(birthYear) {
+    return 2024 - birthYear;
+}
+console.log(calcAge1(1993))
 
-/////////////
 
-
+//Function Expressions
+const calcAge2 = function (birthYeah) {
+    return 2024 - birthYeah;
+}
+const age2 = calcAge2(1998);
+console.log(age2);
 
 
 /*I like to think of functions as machines.
