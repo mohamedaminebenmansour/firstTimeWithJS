@@ -1,4 +1,4 @@
-//////////////// ACTiving Strict Mode////////////////
+//1) ACTiving Strict Mode////////////////
 'use strict';
 /*
 let hasDrieversLiscene = false;
@@ -35,8 +35,9 @@ console.log(appleOrangeJuice);
 const num = Number('23');
 */
 /////////////////////////////////////////
-//----------_________------- Function Declarations vs Expressions
+//2)Function Declarations vs Expressions
 //Function declarations
+/*
 function calcAge1(birthYear) {
     return 2024 - birthYear;
 }
@@ -65,10 +66,40 @@ const yearsUntilRetirement = (birthYeah, firstName) => {
 
 console.log(yearsUntilRetirement(1993, 'Mohamed'));
 console.log(yearsUntilRetirement(1959, 'Amine'));
-
+*/
 /*I like to think of functions as machines.
 So I think that's a great analogy */
 //////// ///////////////////////////////
+//06)Functions Caliing Other Functions
+/*we had this function which was like a fruit processor which received a certain number of apples and a certain number of oranges.
+And then based on that it basically produced and returned juice to us.
+But now in this example
+let's consider that the fruit processorcan only make juice with smaller fruit pieces.
+And so before making the juicethe fruit processor now needs another machinethat first cuts the fruits that we give it and to multiple smaller pieces.
+I think it makes sense actually
+to understand the point that I'm trying to make.
+So, let's actually start by writing that machine.
+So basically that function that cuts a fruitinto multiple pieces.
+So let's say function cutFruitPieces and this function will receive a fruit.
+And all this function will do is to return the fruit cut in four pieces.
+So basically fruit multiplied by four.
+So if we get two apples here it will return eight pieces to us.
+So simply the number eight, okay?
+So that's our machine that cuts the fruit in pieces.
+ */
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);//Calling cutFruitPieces function
+    const orangePieces = cutFruitPieces(oranges);//Calling cutFruitPieces function
+
+    const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+    return juice;
+}
+console.log(fruitProcessor(2, 3));
 //Dot vs Bracket
 /*
 const mohamed = {
