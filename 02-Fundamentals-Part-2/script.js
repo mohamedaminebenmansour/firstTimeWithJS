@@ -207,7 +207,7 @@ const mohamed = {
     calcAge: function (birthYeah) {
         return 2024 - birthYeah;
     },
-    calcAgeWithoutParemeter: function () {//best practice 
+    calcAgeWithoutParemeter: function () {//best practice
         return 2024 - this.birthYeah;//this mean this object ==>mohamed.birthYeah
     },
     calcAgeWithoutParemeter2: function () {//bad practice
@@ -233,6 +233,9 @@ console.log("mohamed.age=", mohamed.age);
 console.log("mohamed.age=", mohamed.age);
 console.log("mohamed.getSymmary()=", mohamed.getSymmary());*/
 /*we only need to calculate the age once(1)
-then form here we simply retrieve the property that we had already calculated before  
+then form here we simply retrieve the property that we had already calculated before
 and so this is the most efficient solution 'calculAgeBestPractice'*/
-
+//Iteration : The for loop
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`9 * ${rep} = ${rep * 9}`)
+}
