@@ -192,7 +192,8 @@ console.log(mohamed)
 
 console.log(`${mohamed.firstName} has ${mohamed.friends.length} and his best friends is ${mohamed.friends[0]}`);
 */
-//Object Methods
+//Object Method
+/*
 const mohamed = {
     firstName: 'Mohamed Amine',
     lastName: "Benmansour",
@@ -230,7 +231,7 @@ console.log("mohamed.calculAgeBestPractice()=", mohamed.calculAgeBestPractice())
 console.log("mohamed.age=", mohamed.age);//(1)
 console.log("mohamed.age=", mohamed.age);
 console.log("mohamed.age=", mohamed.age);
-console.log("mohamed.getSymmary()=", mohamed.getSymmary());
+console.log("mohamed.getSymmary()=", mohamed.getSymmary());*/
 /*we only need to calculate the age once(1)
 then form here we simply retrieve the property that we had already calculated before  
 and so this is the most efficient solution 'calculAgeBestPractice'*/
