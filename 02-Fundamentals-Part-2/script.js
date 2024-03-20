@@ -239,3 +239,38 @@ and so this is the most efficient solution 'calculAgeBestPractice'*/
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`9 * ${rep} = ${rep * 9}`)
 }
+
+const mohamedArray = [
+    'Mohamed Amine',
+    "Benmansour",
+    30,
+    1.78,
+    95,
+    "male",
+    "student",
+    ['mouna', "omar", "moez", "bassem", "gnnena", "aymen", 'saiid']
+];
+const types = [];
+for (let i = 0; i < mohamedArray.length; i++) {
+    console.log(mohamedArray[i], typeof mohamedArray[i]);
+    //types[i] = typeof mohamedArray[i];
+    types.push(typeof mohamedArray[i]);
+}
+console.log(types)
+
+const years = [1993, 1994, 1998, 1991]
+const ages = []
+for (let i = 0; i < years.length; i++) {
+    ages.push(2024 - years[i]);
+}
+console.log(ages);
+
+for (let rep = 1; rep <= 10; rep++) {
+    if (rep % 2 === 0) continue;
+    console.log(`use continue ::9 * ${rep} = ${rep * 9}`)
+}
+
+for (let rep = 1; rep <= 10; rep++) {
+    if (rep === 5) break;
+    console.log(`use break ::9 * ${rep} = ${rep * 9}`)
+}
