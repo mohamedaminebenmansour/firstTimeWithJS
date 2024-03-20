@@ -127,6 +127,7 @@ console.log(yearsUntilRetirement(1950, 'Mike'));
 */
 ///////////////////////////////////////
 //Intoduction to objects
+/*
 const mohamedArray = [
     'Mohamed Amine',
     "Benmansour",
@@ -150,8 +151,9 @@ const mohamedObject = {
     friends: ['mouna', "omar", "moez", "bassem", "gnnena", "aymen", 'saiid']
 };
 console.log(mohamedObject)
+*/
 //Dot vs Bracket
-/*
+
 const mohamed = {
     firstName: 'Mohamed Amine',
     lastName: "Benmansour",
@@ -172,7 +174,7 @@ console.log(mohamed['first' + nameKey])
 console.log(mohamed['last' + nameKey])
 //console.log(mohamed.'last'+nameKey) // error
 const interstedIn = prompt('What do you want to know about Mohamed?\
-Choose between firstName, lastName, age, and friends?')
+Choose between firstName, lastName, age, and friends?');// work with console on goole chromosome
 console.log(interstedIn);
 console.log("mohamed.interstedIn =", mohamed.interstedIn);//dosent works
 
@@ -189,5 +191,5 @@ mohamed.instagram = "@mohamedAmineBenmansour";
 console.log(mohamed)
 
 console.log(`${mohamed.firstName} has ${mohamed.friends.length} and his best friends is ${mohamed.friends[0]}`);
-*/
+
 ////////////////// Object Methods/////////////////
