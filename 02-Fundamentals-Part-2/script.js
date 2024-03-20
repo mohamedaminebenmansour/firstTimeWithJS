@@ -236,6 +236,7 @@ console.log("mohamed.getSymmary()=", mohamed.getSymmary());*/
 then form here we simply retrieve the property that we had already calculated before
 and so this is the most efficient solution 'calculAgeBestPractice'*/
 //Iteration : The for loop
+/*
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`9 * ${rep} = ${rep * 9}`)
 }
@@ -281,5 +282,23 @@ for (let rep = 10; rep > 0; rep--) {
 for (let i = 1; i < 5; i++) {
     for (let j = 1; j < 5; j++) {
         console.log(`Nested ${i} * ${j} = ${i * j}`)
+    }
+}
+*/
+//The while loop
+
+let rep = 1;
+while (rep < 11) {
+    console.log(`use while loop ::9 * ${rep} = ${rep * 9}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+while (dice !== 6) {
+    console.log(`you rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) {
+        console.log('Loop is about to end');
     }
 }
