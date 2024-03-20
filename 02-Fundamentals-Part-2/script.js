@@ -153,7 +153,7 @@ const mohamedObject = {
 console.log(mohamedObject)
 */
 //Dot vs Bracket
-
+/*
 const mohamed = {
     firstName: 'Mohamed Amine',
     lastName: "Benmansour",
@@ -191,5 +191,47 @@ mohamed.instagram = "@mohamedAmineBenmansour";
 console.log(mohamed)
 
 console.log(`${mohamed.firstName} has ${mohamed.friends.length} and his best friends is ${mohamed.friends[0]}`);
+*/
+//Object Methods
+const mohamed = {
+    firstName: 'Mohamed Amine',
+    lastName: "Benmansour",
+    birthYeah: 1993,
+    height: 1.78,
+    weight: 95,
+    gender: "male",
+    job: "student",
+    hasDriversLicense: true,
+    friends: ['mouna', "omar", "moez", "bassem", "gnnena", "aymen", 'saiid'],
+    calcAge: function (birthYeah) {
+        return 2024 - birthYeah;
+    },
+    calcAgeWithoutParemeter: function () {//best practice 
+        return 2024 - this.birthYeah;//this mean this object ==>mohamed.birthYeah
+    },
+    calcAgeWithoutParemeter2: function () {//bad practice
+        return 2024 - mohamed.birthYeah;//just expalin this
+    },
+    calculAgeBestPractice: function () {
+        this.age = 2024 - this.birthYeah;//add property to this object
+        return this.age;
+    },
+    getSymmary: function () {
+        return `my name is ${this.firstName} ${this.lastName} and I am  ${this.age} years old
+        my job is ${this.job} and my best friend is ${this.friends[0]}`;
+    }
+}
+console.log("mohamed.calcAge(1993)=", mohamed.calcAge(1993));
+console.log("mohamed['calcAge'](1993)=", mohamed['calcAge'](1993));
 
-////////////////// Object Methods/////////////////
+console.log("mohamed.calcAgeWithoutParemeter()=", mohamed.calcAgeWithoutParemeter());
+console.log("mohamed.calcAgeWithoutParemeter2()=", mohamed.calcAgeWithoutParemeter2());
+console.log("mohamed.calculAgeBestPractice()=", mohamed.calculAgeBestPractice());
+console.log("mohamed.age=", mohamed.age);//(1)
+console.log("mohamed.age=", mohamed.age);
+console.log("mohamed.age=", mohamed.age);
+console.log("mohamed.getSymmary()=", mohamed.getSymmary());
+/*we only need to calculate the age once(1)
+then form here we simply retrieve the property that we had already calculated before  
+and so this is the most efficient solution 'calculAgeBestPractice'*/
+
