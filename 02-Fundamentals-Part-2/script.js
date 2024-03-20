@@ -103,6 +103,7 @@ console.log(fruitProcessor(2, 3));
 */
 ///////////////////////////////////////
 // Reviewing Functions
+/*
 const calcAge = function (birthYeah) {
     return 2037 - birthYeah;
 }
@@ -123,9 +124,32 @@ const yearsUntilRetirement = function (birthYeah, firstName) {
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
 
-
+*/
 ///////////////////////////////////////
+//Intoduction to objects
+const mohamedArray = [
+    'Mohamed Amine',
+    "Benmansour",
+    30,
+    1.78,
+    95,
+    "male",
+    "student",
+    ['mouna', "omar", "moez", "bassem", "gnnena", "aymen", 'saiid']
+];
+console.log(mohamedArray)
 
+const mohamedObject = {
+    firstName: 'Mohamed Amine',
+    lastName: "Benmansour",
+    age: 30,
+    height: 1.78,
+    weight: 95,
+    gender: "male",
+    occupation: "student",
+    friends: ['mouna', "omar", "moez", "bassem", "gnnena", "aymen", 'saiid']
+};
+console.log(mohamedObject)
 //Dot vs Bracket
 /*
 const mohamed = {
