@@ -274,3 +274,12 @@ for (let rep = 1; rep <= 10; rep++) {
     if (rep === 5) break;
     console.log(`use break ::9 * ${rep} = ${rep * 9}`)
 }
+
+for (let rep = 10; rep > 0; rep--) {
+    console.log(`loop backwards ::9 * ${rep} = ${rep * 9}`)
+}
+for (let i = 1; i < 5; i++) {
+    for (let j = 1; j < 5; j++) {
+        console.log(`Nested ${i} * ${j} = ${i * j}`)
+    }
+}
